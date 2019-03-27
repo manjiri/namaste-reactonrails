@@ -1,5 +1,6 @@
 # You can run these commands in separate shells instead of using foreman
-web: rails s -p 3000
+#web: rails s -p 3000
+web: rails s puma  -b 'ssl://0.0.0.0:3000?key=/Users/manjiri/ssl/server.key&cert=/Users/manjiri/ssl/server.crt'
 
 # Next line runs the webpack-dev-server
 # You can edit config/webpacker.yml to set HMR to true to see hot reloading.
