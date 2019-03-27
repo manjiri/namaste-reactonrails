@@ -1,0 +1,1 @@
+Dir.glob("#{Rails.root}/lib/auth/*.rb").each { |file| require(file) } 
